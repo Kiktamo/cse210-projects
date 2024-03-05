@@ -21,8 +21,8 @@ class Program
         job2._startYr = 2017;
         job2._endYr = 2020;
 
-        resume.jobs.Add(job1);
-        resume.jobs.Add(job2);
+        resume._jobs.Add(job1);
+        resume._jobs.Add(job2);
 
         resume.display();
 
