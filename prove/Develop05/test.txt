@@ -1,0 +1,4 @@
+0
+SimpleGoal::Test::Test::50::False
+EternalGoal::Test2::Test2::20
+ChecklistGoal::Test3::Test3::20::4::100::0
