@@ -27,7 +27,7 @@ public abstract class Goal
         return $"[{check}] {_shortName} ({_description})";
     }
 
-    public string GetName()
+    public virtual string GetName()
     {
         return _shortName;
     }
@@ -36,9 +36,11 @@ public abstract class Goal
     {
         return _description;
     }
+
     
     public int GetPoints()
     {
         return _points;
     }
+
 }

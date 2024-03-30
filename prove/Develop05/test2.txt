@@ -1,0 +1,6 @@
+230
+SimpleGoal::Test::Test::50::True
+EternalGoal::Test2::Test2::20
+ChecklistGoal::Test3::Test3::20::4::100::4
+NegativeGoal::Stop testing::Never::10
+AlternatingGoal::Test5::Test5::20::Test5Alt::Test5Alt::10
