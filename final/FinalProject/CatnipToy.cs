@@ -9,14 +9,21 @@ class CatnipToy : Toy
 
     public override string Play() 
     {
-        // Not sure about this particular output.
+        DecreaseDurability(1);
         return "You play with your pet using the catnip toy."; 
     }
 
-    public int DecreaseCatnip() 
+    public int UseCatnip() 
     {
-        // A more random number might be a good idea?
-        --_catnipLevel;
-        return 1; 
+        if (_catnipLevel != 0)
+        {
+            _catnipLevel -= 1;
+            return 1; 
+        }
+        else
+        {
+            return 0;
+        }
+
     }
 }

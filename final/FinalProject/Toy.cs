@@ -9,6 +9,16 @@ abstract class Toy : Item
 
     public abstract string Play();
 
+    public double GetDurability()
+    {
+        return _durability;
+    }
+
+    public void DecreaseDurability(double value)
+    {
+        _durability = Math.Clamp(_durability - value, 0, 100);
+    }
+
     public bool IsBroken() 
     {
         return _durability <= 0; 

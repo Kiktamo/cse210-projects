@@ -236,8 +236,8 @@ class Game
             {
                 case "1":
                     _toys.Add(new BallToy("ball", 5.0, 5.0, false, false));
-                    _toys.Add(new ChewToy("chew", 5.0, 5.0, 0.5));
-                    _toys.Add(new CatnipToy("catnip", 5.0, 5.0, 10));
+                    _toys.Add(new ChewToy("chewToy", 5.0, 5.0, 0.5));
+                    _toys.Add(new CatnipToy("catnipToy", 5.0, 5.0, 10));
                     break;
                 case "2":
                     _food.Add(new Food("Cat Food", "CatFood", 5.0, 5.0));
@@ -256,7 +256,8 @@ class Game
     private void FinishTurn()
     {
         // Update money, remove broken toys and eaten foods
-        _money += _pet.GetHappiness() * 0.1; // A more complex calculation based on multiple factors might be worthwhile.
+        _pet.DoTurn();
+        _money += _pet.GetHappiness() * _pet.GetMoneyModifier() * 0.1;
         _toys.RemoveAll(t => t.IsBroken());
         _food.RemoveAll(f => f.IsEaten());
     }

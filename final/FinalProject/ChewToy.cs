@@ -9,7 +9,7 @@ class ChewToy : Toy
 
     public override string Play() 
     { 
+        DecreaseDurability(1 * _durabilityMod);
         return $"The pet chews on the {_name}.";
-        // Lower durability with modifer impacting amount
     }
 }

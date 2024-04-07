@@ -10,7 +10,18 @@ class BallToy : Toy
     }
 
     public override string Play() 
-    { 
-        return $"You play with your pet using {_name}."; 
+    {
+        DecreaseDurability(1); 
+        string play = $"You play with your pet using {GetName()}.";
+        if (_hasBells)
+        {
+            play += "\nThe bells jingle and jangle all over the place.";
+        }
+        if (_hasSqueaker)
+        {
+            play += "\nIt squeaks many times as you play.";
+        }
+
+        return play;
     }
 }
