@@ -11,22 +11,22 @@ abstract class Item
         _cost = cost;
     }
 
-    public string GetItemType() 
-    { 
-        return _type; 
+    public string GetItemType()
+    {
+        return _type;
     }
-    public string GetName() 
-    { 
-        return _name; 
-    }
-
-    public double GetCost() 
-    { 
-        return _cost; 
+    public string GetName()
+    {
+        return _name;
     }
 
-    public void SetName(string name) 
-    { 
-        _name = name; 
+    public double GetCost()
+    {
+        return _cost;
+    }
+
+    public void SetName(string name)
+    {
+        _name = name;
     }
 }

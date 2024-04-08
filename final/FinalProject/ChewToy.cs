@@ -7,8 +7,8 @@ class ChewToy : Toy
         _durabilityMod = durabilityMod;
     }
 
-    public override string Play() 
-    { 
+    public override string Play()
+    {
         DecreaseDurability(1 * _durabilityMod);
         return $"The pet chews on the {_name}.";
     }

@@ -9,9 +9,9 @@ class BallToy : Toy
         _hasSqueaker = hasSqueaker;
     }
 
-    public override string Play() 
+    public override string Play()
     {
-        DecreaseDurability(1); 
+        DecreaseDurability(1);
         string play = $"You play with your pet using {GetName()}.";
         if (_hasBells)
         {

@@ -2,7 +2,7 @@ abstract class Toy : Item
 {
     private double _durability;
 
-    public Toy(string name, string type, double durability, double cost) : base(name,type,cost)
+    public Toy(string name, string type, double durability, double cost) : base(name, type, cost)
     {
         _durability = durability;
     }
@@ -19,8 +19,8 @@ abstract class Toy : Item
         _durability = Math.Clamp(_durability - value, 0, 100);
     }
 
-    public bool IsBroken() 
+    public bool IsBroken()
     {
-        return _durability <= 0; 
+        return _durability <= 0;
     }
 }

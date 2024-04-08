@@ -12,18 +12,18 @@ class CatnipToy : Toy
         return _catnipLevel;
     }
 
-    public override string Play() 
+    public override string Play()
     {
         DecreaseDurability(1);
-        return "You play with your pet using the catnip toy."; 
+        return "You play with your pet using the catnip toy.";
     }
 
-    public int UseCatnip() 
+    public int UseCatnip()
     {
         if (_catnipLevel != 0)
         {
             _catnipLevel -= 1;
-            return 1; 
+            return 1;
         }
         else
         {
