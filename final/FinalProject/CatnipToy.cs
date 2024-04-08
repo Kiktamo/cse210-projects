@@ -2,9 +2,14 @@ class CatnipToy : Toy
 {
     private int _catnipLevel;
 
-    public CatnipToy(string name, double durability, double cost, int catnipLevel) : base(name, "CatnipToy", durability, cost)
+    public CatnipToy(string name, double durability, double cost, int catnipLevel) : base(name, "catnipToy", durability, cost)
     {
         _catnipLevel = catnipLevel;
+    }
+
+    public int GetCatnipLevel()
+    {
+        return _catnipLevel;
     }
 
     public override string Play() 

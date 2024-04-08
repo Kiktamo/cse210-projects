@@ -2,7 +2,7 @@ class ChewToy : Toy
 {
     private double _durabilityMod;
 
-    public ChewToy(string name, double durability, double cost, double durabilityMod) : base(name, "ChewToy", durability, cost)
+    public ChewToy(string name, double durability, double cost, double durabilityMod) : base(name, "chewToy", durability, cost)
     {
         _durabilityMod = durabilityMod;
     }

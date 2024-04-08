@@ -2,10 +2,12 @@ class DogPet : Pet
 {
     public DogPet(string name) : base(name)
     {
+        _petType = "Dog";
     }
 
     public DogPet(string name, string color) : base(name, color)
     {
+        _petType = "Dog";
     }
 
     public override void Eat(Food food)
@@ -37,6 +39,7 @@ class DogPet : Pet
     public override void Play(Toy toy)
     {
         // Dog-specific playing behavior
+        toy.Play();
         string type = toy.GetItemType();
         switch (type)
         {

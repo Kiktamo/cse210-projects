@@ -9,12 +9,14 @@ class CatPet : Pet
     {
         _catnipLevel = 0;
         _aloofnessLevel = 0;
+        _petType = "Cat";
     }
 
     public CatPet(string name, string color) : base(name, color)
     {
         _catnipLevel = 0;
         _aloofnessLevel = 0;
+        _petType = "Cat";
     }
 
     public override void Eat(Food food)
@@ -59,6 +61,7 @@ class CatPet : Pet
             return;
         }
 
+        toy.Play();
         string type = toy.GetItemType();
         switch (type)
         {

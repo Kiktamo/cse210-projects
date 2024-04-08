@@ -7,6 +7,8 @@ abstract class Pet
     protected double _energy;
     protected string _color;
 
+    protected string _petType;
+
     public Pet(string name)
     {
         _name = name;
@@ -14,6 +16,7 @@ abstract class Pet
         _happiness = 100;
         _hunger = 0;
         _energy = 100;
+        _petType = "Pet";
     }
 
     public Pet(string name, string color)
@@ -24,6 +27,42 @@ abstract class Pet
         _happiness = 100;
         _hunger = 0;
         _energy = 100;
+        _petType = "Pet";
+    }
+
+    public string GetName()
+    {
+        return _name;
+    }
+
+    public double GetHappiness()
+    {
+        return _happiness;
+    }
+
+    public string GetColor()
+    {
+        return _color;
+    }
+
+    public double GetHealth()
+    {
+        return _health;
+    }
+
+    public double GetEnergy()
+    {
+        return _energy;
+    }
+
+    public double GetHunger()
+    {
+        return _hunger;
+    }
+
+    public string GetPetType()
+    {
+        return _petType;
     }
 
     public abstract void Eat(Food food);
@@ -94,15 +133,6 @@ abstract class Pet
         _color = color;
     }
 
-    public string GetName()
-    {
-        return _name;
-    }
-
-    public double GetHappiness()
-    {
-        return _happiness;
-    }
 
     public double GetMoneyModifier()
     {
